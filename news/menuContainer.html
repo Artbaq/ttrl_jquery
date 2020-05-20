@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="jquery-3.2.1.min.js"></script>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+
+
+
+  <style type="text/css">
+  	button{
+  		border:1px solid teal;
+  		padding: 10px;
+  		margin: 10px;
+  		margin-top: 10px;
+  	}	
+
+div	{
+	display: inline-block;
+}
+.example{ width:40px;height:40px; background-color:blue; display: inline-flex;  margin: 15px }	
+
+
+  </style>
+</head>
+<body>
+	<button class="fadeIn">fadeIn()</button>
+    <button class="fadeOut">fadeOut()</button>
+  	<button class="fadeTo">fadeTo()</button>
+    <button class="fadeToggle">fadeToggle()</button> <br> 
+
+  	
+
+
+
+</body>
+
+
+<script>
+
+         
+
+      /*$('div').css('display','none');
+
+      $('.fadeIn').click(function(){	
+    		$('#fadeIn').load('fadeIn.html', function(){
+    			 $('#fadeIn').append('<pre id="myQuery"></pre>');
+    			$("#myQuery").text($("#myscpt").html());
+    		});
+			
+			$('#fadeIn').toggle();
+
+			$('.fadeOut').click(function(){	
+    		$('#fadeIn').load('fadeOut.html');
+    		$('#fadeIn').toggle();
+    	});
+
+*/
+       
+
+function easier(type){
+
+    	$('.' +type).click(function(){	
+    		$('#fadeIn').load(type+'.html', function(){
+    			 $('#fadeIn').append('<div><pre id="myQuery"></pre></div>');
+    			$("#myQuery").text($(".myscpt").html());
+    		});
+			
+			$('#fadeIn').toggle();
+			
+			
+    	});
+}
+
+
+
+easier('fadeIn');
+easier('fadeOut');
+easier('fadeTo');
+easier('fadeToggle');
+    	
+
+
+    	
+    
+
+    $('button').mouseenter(function(){
+				$('#fadeIn').hide();
+			});
+
+
+
+
+
+</script>
+
+
+</html>
