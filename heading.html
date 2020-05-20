@@ -1,0 +1,81 @@
+<script type="text/javascript">
+
+//var btnClass = "w3-red w3-btn w3-margin";
+
+
+
+	$(fadeIn).click(function(){
+	$('#wrapper').load('fade/fadeIn.html')
+		//function(){
+		//	$("button").addClass(btnClass);
+	//	});
+	});
+	
+	$(fadeOut).click(function(){
+		$('#wrapper').load('fade/fadeOut.html', 
+			function(){
+				$("button").addClass();
+		});
+	});
+	
+	$("a").click(function(){
+	$("button").addClass(btnClass);
+	});
+</script>
+
+
+<div id="logoBox"> 
+	<div>
+    	<img src="logo.png" alt="logo image"> 
+    </div>
+    <div>
+    	<h2>Artículos bquilla</h2> 
+    </div>
+</div>       
+
+<nav id="myNav">        
+    <a id="fadeIn">fadeIn()</a> 
+    <a id="fadeOut">fadeOut()</a>
+    <a href="">Acerca </a>
+    <a href="">Portafolio</a>    <!-- <a href="">Salida</a> -->
+</nav>
+
+<style type="text/css">
+
+body{ margin: 0; padding: 0;    } 
+
+#logoBox{
+	height:5em;
+}
+
+#logoBox div{    
+	display:inline-block;
+	height:100%;
+	padding-left: 4%;
+
+}
+
+#header img{
+	height:4em;
+	border-radius: 50%;
+
+}    
+
+h2{ float: }
+
+
+#myNav {
+    background-color:rgba(172, 255, 47, 0.801);
+    text-align: right; 
+    overflow: hidden;
+}  
+
+nav a{
+    padding: 0.2em;
+    text-decoration: none;
+    display:inline-flex;
+    font-weight: bold;
+    color: black;
+}
+
+</style>

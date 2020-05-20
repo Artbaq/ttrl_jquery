@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="css/w3.css">
+   <script src="js/jquery-3.2.1.min.js"></script>
+   
+   <!--<style> body{ margin: 0; padding: 0;    }  </style>-->
+</head>
+
+<script>
+
+var btnClass = "w3-red w3-btn w3-margin";
+    $(document).ready(function(){
+      $('#header').load('heading.html');
+      
+      
+      $("a").click(function(){
+      $("button").addClass(btnClass);
+      });
+   
+    });
+  
+</script>
+
+<body>
+  <div id="header">did not opened</div>
+  <div id="wrapper"></div>
+
+</body>
+
+
+
+  
+</html>
