@@ -13,7 +13,10 @@ var txt = '$("button").addClass(btnClass)';
 		});
 	
 	$(fadeOut).click(function(){
-		$('#wrapper').load('fade/fadeOut.html')
+		$('#wrapper').load('fade/fadeOut.html', function(){
+			//$("button").addClass(btnClass);
+			txt;
+			});		
 		});
 	
 	
