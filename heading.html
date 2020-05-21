@@ -5,18 +5,13 @@ var btnClass = "w3-red w3-btn w3-margin";
 
 
 	$(fadeIn).click(function(){
-	$('#wrapper').load('fade/fadeIn.html',
-		function(){
-			$("button").addClass(btnClass);
+		$('#wrapper').load('fade/fadeIn.html');		
 		});
-	});
 	
 	$(fadeOut).click(function(){
-		$('#wrapper').load('fade/fadeOut.html', 
-			function(){
-				$("button").addClass(btnClass);
+		$('#wrapper').load('fade/fadeOut.html');
 		});
-	});
+	
 	
 	
 	
