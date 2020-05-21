@@ -1,14 +1,14 @@
 <script type="text/javascript">
 
-//var btnClass = "w3-red w3-btn w3-margin";
+var btnClass = "w3-red w3-btn w3-margin";
 
 
 
 	$(fadeIn).click(function(){
-	$('#wrapper').load('fade/fadeIn.html')
-		//function(){
-		//	$("button").addClass(btnClass);
-	//	});
+	$('#wrapper').load('fade/fadeIn.html',
+		function(){
+			$("button").addClass(btnClass);
+		});
 	});
 	
 	$(fadeOut).click(function(){
@@ -18,9 +18,12 @@
 		});
 	});
 	
+	
+	
 	$("a").click(function(){
 	$("button").addClass(btnClass);
 	});
+	
 </script>
 
 
@@ -36,8 +39,8 @@
 <nav id="myNav">        
     <a id="fadeIn">fadeIn()</a> 
     <a id="fadeOut">fadeOut()</a>
-    <a href="">Acerca </a>
-    <a href="">Portafolio</a>    <!-- <a href="">Salida</a> -->
+    <a id="fadeTo">fadeTo()</a>
+    <a id="fadeToggle">fadeToggle()</a>    <!-- <a href="">Salida</a> -->
 </nav>
 
 <style type="text/css">
