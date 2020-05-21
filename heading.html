@@ -1,22 +1,27 @@
 <script type="text/javascript">
 
-var btnClass = "w3-red w3-btn w3-margin";
-var btnClass2 = "w3-blue w3-btn w3-margin";
-var text = $("button").addClass(btnClass2);
-	
-
-
+var btnClass = "w3-blue w3-btn w3-margin";
 
 	$(fadeIn).click(function(){
 		$('#wrapper').load('fade/fadeIn.html', function(){
-			//$("button").addClass(btnClass);
-			//$("button").addClass(btnClass);
-			text;
+			$("button").addClass(btnClass);
 			});		
 		});
 	
 	$(fadeOut).click(function(){
 		$('#wrapper').load('fade/fadeOut.html', function(){
+			$("button").addClass(btnClass);
+			});		
+		});
+
+	$(fadeTo).click(function(){
+		$('#wrapper').load('fade/fadeTo.html', function(){
+			$("button").addClass(btnClass);
+			});		
+		});
+
+	$(fadeToggle).click(function(){
+		$('#wrapper').load('fade/fadeToggle.html', function(){
 			$("button").addClass(btnClass);
 			});		
 		});
